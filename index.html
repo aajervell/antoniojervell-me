@@ -84,31 +84,23 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        // Seleciona a seção a ser observada
         const targetSection = document.querySelector('.additional-projects-section');
-
-        // Configurações do observador (quando a seção deve ser considerada visível)
         const observerOptions = {
             root: null, 
             rootMargin: '0px',
             threshold: 0.2 
         };
 
-        // Cria a função que será chamada quando a seção for vista
         const observerCallback = (entries, observer) => {
             entries.forEach(entry => {
-                // Se a seção estiver visível
                 if (entry.isIntersecting) {
-                    // Adiciona a classe 'visible' e remove 'hidden' para ativar a transição
                     entry.target.classList.add('visible');
                     entry.target.classList.remove('hidden');
-                    // Para de observar depois de aparecer
                     observer.unobserve(entry.target);
                 }
             });
         };
 
-        // Cria e inicia a observação
         const observer = new IntersectionObserver(observerCallback, observerOptions);
         observer.observe(targetSection);
     });
