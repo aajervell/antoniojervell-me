@@ -2,11 +2,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 50px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    padding: 50px 20px 200px 20px;
+    
     /* Mimicking the orange/purple background gradient from the image */
     background: linear-gradient(135deg, #fceecf 0%, #e2eafc 50%, #d8cffc 100%);
 }
