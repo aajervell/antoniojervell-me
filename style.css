@@ -191,3 +191,36 @@ body {
         font-size: 3rem;
     }
 }
+/* Estilo para a nova Secção de Conteúdo */
+.section-heading {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #5d4a97; /* Cor roxa similar ao título principal */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e4dffc; /* Linha sutil para separar */
+    padding-bottom: 5px;
+}
+
+.project-list {
+    list-style: none; /* Remove os marcadores de lista padrão */
+    padding: 0;
+    margin: 0;
+}
+
+.project-list li {
+    margin-bottom: 20px;
+}
+
+.project-list strong {
+    color: #333;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.project-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
