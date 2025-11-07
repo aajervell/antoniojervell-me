@@ -6,144 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>António Jervell - Profile</title>
     <meta name="description" content="António Jervell | Empreendedor, Consultor e Estudante em Barcelona.">
+    
+    <link rel="stylesheet" href="style.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        /* Basic Reset and Font */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 50px 20px 100px 20px; 
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="profile-image-container">
+            <img src="IMG_0149.jpg" alt="António Jervell Profile Photo" class="profile-photo">
+        </div>
+        
+        <div class="profile-content">
+            <h1 class="name"><strong>António<br>Jervell</strong></h1>
+            <p class="title">Entrepreneur, Student, & Consultant</p>
+
+            <p class="bio-text">
+                Hi there!
+            </p>
+            <p class="bio-text">
+                I’m an entrepreneur, student, and consultant currently living in <strong>Barcelona</strong>. I love creating meaningful things — projects that bring ideas to life and make a positive impact on people and society. I’m always exploring, learning, and finding new ways to connect creativity with purpose.
+            </p>
+            <p class="bio-text">
+                I’m open to new opportunities and collaborations — so if you’d like to work together or just share ideas, feel free to hit me up!
+            </p>
             
-            background: linear-gradient(135deg, #fceecf 0%, #e2eafc 50%, #d8cffc 100%);
-        }
+            <h3 class="section-heading">Projetos Recentes</h3>
+            <ul class="project-list">
+                <li>
+                    <strong>[Nome do Projeto 1]</strong>
+                    <p class="project-description">Uma breve descrição sobre o que fez, o resultado alcançado e as tecnologias usadas (Ex: HTML, CSS).</p>
+                </li>
+                <li>
+                    <strong>[Nome do Projeto 2]</strong>
+                    <p class="project-description">Detalhes sobre um projeto académico ou consultoria que demonstre as suas competências.</p>
+                </li>
+            </ul>
+        </div> 
+        
+        <div class="profile-sidebar"> 
+            <h2 class="sidebar-heading">Get in touch</h2>
+            
+            <p class="sidebar-text">
+                I'd love to connect and explore new opportunities.
+            </p>
 
-        .profile-card {
-            display: flex;
-            max-width: 1000px;
-            width: 90%;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            background-color: white;
-            margin: 0 auto 50px auto; 
-        }
+            <div class="button-group">
+                <a href="mailto:aajervell@gmail.com" class="sidebar-button primary">Email Me</a>
+                <a href="https://www.linkedin.com/in/ant%C3%B3nio-jervell-889877336/" target="_blank" class="sidebar-button secondary">LinkedIn</a>
+            </div>
 
-        /* --- Left Section: Profile Image --- */
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ant%C3%B3nio-jervell-889877336/" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">In</a>
+                <a href="https://www.instagram.com/antoniojervell/" target="_blank" class="social-icon instagram" aria-label="Instagram">Ig</a>
+                <a href="#" target="_blank" class="social-icon twitter" aria-label="Twitter">X</a>
+                <a href="#" target="_blank" class="social-icon facebook" aria-label="Facebook">Fb</a>
+            </div>
+        </div> 
+    </div> 
 
-        .profile-image-container {
-            width: 30%;
-            background: linear-gradient(to right, #fdf8f4, #f5f5f5);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
+    <section class="additional-projects-section">
+        <div class="max-width-container">
+            <h2>Experiência e Projetos Adicionais</h2>
+            <p>Aqui você pode expandir a sua experiência de trabalho e listar mais projetos relevantes.</p>
 
-        .profile-photo {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; 
-            border-radius: 5px; 
-        }
+            <div class="project-item">
+                <h3>Desenvolvimento de Estratégia Digital</h3>
+                <p>Criação e execução de planos de marketing de conteúdo, focando em SEO e engajamento social. (2023)</p>
+            </div>
+            
+            <div class="project-item">
+                <h3>Análise de Viabilidade de Novo Negócio</h3>
+                <p>Estudo de mercado e projeções financeiras para uma startup de tecnologia em Barcelona. (Consultoria)</p>
+            </div>
+        </div>
+    </section>
 
-        /* --- Center Section: Content --- */
-
-        .profile-content {
-            width: 45%;
-            padding: 40px 50px;
-            background-color: #fcfbff; 
-        }
-
-        .name {
-            font-size: 3.5rem;
-            font-weight: 300;
-            line-height: 1.1;
-            margin: 0 0 10px 0;
-            color: #333;
-        }
-        .name strong {
-             font-weight: 700;
-        }
-
-        .title {
-            font-size: 1rem;
-            color: #8a2be2; 
-            font-weight: 400;
-            margin-bottom: 30px;
-        }
-
-        .bio-text {
-            font-size: 0.95rem;
-            line-height: 1.6;
-            color: #555;
-            margin-bottom: 15px;
-        }
-
-        /* --- Right Section: Sidebar --- */
-
-        .profile-sidebar {
-            width: 25%;
-            padding: 40px 30px;
-            background: linear-gradient(135deg, #e4dffc 0%, #c3bbfb 100%);
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .sidebar-heading {
-            font-size: 1.2rem;
-            font-weight: 700;
-            margin-top: 0;
-            margin-bottom: 10px;
-            color: #5d4a97;
-        }
-
-        .sidebar-text {
-            font-size: 0.85rem;
-            line-height: 1.5;
-            margin-bottom: 25px;
-            color: #4a4a4a;
-        }
-
-        .button-group {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-bottom: 30px;
-        }
-
-        .sidebar-button {
-            text-decoration: none;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-size: 0.9rem;
-            font-weight: 700;
-            transition: transform 0.2s, box-shadow 0.2s;
-            text-align: center;
-        }
-
-        .sidebar-button.primary {
-            background: linear-gradient(to right, #8a2be2, #a672f7);
-            color: white;
-            box-shadow: 0 4px 10px rgba(138, 43, 226, 0.4);
-        }
-
-        .sidebar-button.secondary {
-            background: linear-gradient(to right, #b0a7fb, #d4ccfb);
-            color: #5d4a97;
-            box-shadow: 0 4px 10px rgba(176, 167, 251, 0.4);
-        }
-
-        .sidebar-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        /* --- Social Icons --- */
-
-        .social-links {
-            display: flex;
-            gap: 1
+</body>
+</html>
+            
