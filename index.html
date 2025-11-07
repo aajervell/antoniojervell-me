@@ -5,22 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>António Jervell - Profile</title>
+    <meta name="description" content="António Jervell | Empreendedor, Consultor e Estudante em Barcelona.">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         /* Basic Reset and Font */
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
-            /* Permite scroll e margem no topo */
             padding: 50px 20px 100px 20px; 
             
-            /* REGRAS REMOVIDAS para permitir o SCROLL: */
-            /* display: flex; 
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh; */
-            
-            /* Mimicking the orange/purple background gradient from the image */
             background: linear-gradient(135deg, #fceecf 0%, #e2eafc 50%, #d8cffc 100%);
         }
 
@@ -32,7 +25,6 @@
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             background-color: white;
-            /* Adiciona margem em baixo para separar do novo conteúdo */
             margin: 0 auto 50px auto; 
         }
 
@@ -134,4 +126,24 @@
         }
 
         .sidebar-button.primary {
-            background: linear-gradient(to right, #8a2
+            background: linear-gradient(to right, #8a2be2, #a672f7);
+            color: white;
+            box-shadow: 0 4px 10px rgba(138, 43, 226, 0.4);
+        }
+
+        .sidebar-button.secondary {
+            background: linear-gradient(to right, #b0a7fb, #d4ccfb);
+            color: #5d4a97;
+            box-shadow: 0 4px 10px rgba(176, 167, 251, 0.4);
+        }
+
+        .sidebar-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* --- Social Icons --- */
+
+        .social-links {
+            display: flex;
+            gap: 1
