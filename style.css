@@ -221,3 +221,48 @@ body {
     color: #666;
     line-height: 1.4;
 }
+/* --- Estilos para o Conteúdo Abaixo do Cartão --- */
+
+/* Centraliza o novo conteúdo */
+.additional-projects-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f7f7f7; /* Fundo limpo para o novo conteúdo */
+}
+
+/* Limita a largura do conteúdo para que não fique muito esticado */
+.max-width-container {
+    max-width: 900px;
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 20px;
+    text-align: left;
+}
+
+
+.additional-projects-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.project-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.project-item h3 {
+    color: #8a2be2;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.project-item p {
+    color: #555;
+    font-size: 0.95rem;
+}
