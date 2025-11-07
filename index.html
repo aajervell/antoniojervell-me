@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>António Jervell - Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset and Font */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* Mimicking the orange/purple background gradient from the image */
+            background: linear-gradient(135deg, #fceecf 0%, #e2eafc 50%, #d8cffc 100%);
+        }
+
+        .profile-card {
+            display: flex;
+            max-width: 1000px;
+            width: 90%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        /* --- Left Section: Profile Image --- */
+
+        .profile-image-container {
+            width: 30%;
+            /* Gradient color on the left of the image */
+            background: linear-gradient(to right, #fdf8f4, #f5f5f5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .profile-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            border-radius: 5px; /* Slight rounding for the photo itself */
+        }
+
+        /* --- Center Section: Content --- */
+
+        .profile-content {
+            width: 45%;
+            padding: 40px 50px;
+            background-color: #fcfbff; /* Very light purple/white background */
+        }
+
+        .name {
+            font-size: 3.5rem;
+            font-weight: 300;
+            line-height: 1.1;
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        .title {
+            font-size: 1rem;
+            color: #8a2be2; /* Purple color for the title */
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .bio-text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        /* --- Right Section: Sidebar --- */
+
+        .profile-sidebar {
+            width: 25%;
+            padding: 40px 30px;
+            /* Gradient background for the sidebar */
+            background: linear-gradient(135deg, #e4dffc 0%, #c3bbfb 100%);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .sidebar-heading {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #5d4a97;
+        }
+
+        .sidebar-text {
+            font-size: 0.85rem;
+            line-height: 1.5;
+            margin-bottom: 25px;
+            color: #4a4a4a;
+        }
+
+        .button-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .sidebar-button {
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+        }
+
+        .sidebar-button.primary {
+            background: linear-gradient(to right, #8a2be2, #a672f7);
+            color: white;
+            box-shadow: 0 4px 10px rgba(138, 43, 226, 0.4);
+        }
+
+        .sidebar-button.secondary {
+            background: linear-gradient(to right, #b0a7fb, #d4ccfb);
+            color: #5d4a97;
+            box-shadow: 0 4px 10px rgba(176, 167, 251, 0.4);
+        }
+
+        .sidebar-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* --- Social Icons (Simple Text Placeholder) --- */
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: auto; /* Push social links to the bottom */
+        }
+
+        .social-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #8a2be2; /* Icon color */
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .social-icon:hover {
+            background-color: #8a2be2;
+            color: white;
+        }
+
+        /* --- Responsiveness --- */
+
+        @media (max-width: 850px) {
+            .profile-card {
+                flex-direction: column;
+                width: 95%;
+            }
+
+            .profile-image-container, .profile-content, .profile-sidebar {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .profile-image-container {
+                max-height: 250px;
+            }
+
+            .profile-content {
+                order: 2; /* Move content below image */
+            }
+
+            .profile-sidebar {
+                order: 3; /* Keep sidebar last */
+            }
+
+            .name {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="profile-image-container">
+            <img src="image_ac5eef.jpg" alt="António Jervell Profile Photo" class="profile-photo">
+        </div>
+        
+        <div class="profile-content">
+            <h1 class="name">António<br>Jervell</h1>
+            <p class="title">Entrepreneur, Student, & Consultant</p>
+
+            <p class="bio-text">
+                **Hi there!**
+            </p>
+            <p class="bio-text">
+                I’m an entrepreneur, student, and consultant currently living in **Barcelona**. I love creating meaningful things — projects that bring ideas to life and make a positive impact on people and society. I’m always exploring, learning, and finding new ways to connect creativity with purpose.
+            </p>
+            <p class="bio-text">
+                I’m open to new opportunities and collaborations — so if you’d like to work together or just share ideas, feel free to hit me up!
+            </p>
+        </div>
+        
+        <div class="profile-sidebar">
+            <h2 class="sidebar-heading">Get in touch</h2>
+            
+            <p class="sidebar-text">
+                I'd love to connect and explore new opportunities.
+            </p>
+
+            <div class="button-group">
+                <a href="mailto:your_email@example.com" class="sidebar-button primary">Email Me</a>
+                <a href="https://www.linkedin.com/in/ant%C3%B3nio-jervell-889877336/" target="_blank" class="sidebar-button secondary">LinkedIn</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ant%C3%B3nio-jervell-889877336/" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">In</a>
+                <a href="https://www.instagram.com/antoniojervell/" target="_blank" class="social-icon instagram" aria-label="Instagram">Ig</a>
+                <a href="#" target="_blank" class="social-icon twitter" aria-label="Twitter">X</a>
+                <a href="#" target="_blank" class="social-icon facebook" aria-label="Facebook">Fb</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
